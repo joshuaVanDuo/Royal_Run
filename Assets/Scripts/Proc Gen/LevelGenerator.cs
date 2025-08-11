@@ -9,6 +9,7 @@ public class LevelGenerator : MonoBehaviour
    [SerializeField] GameObject chunkPrefab; //타일 프리팹
 
    [SerializeField] Transform chunkParent; 
+   [SerializeField] ScoreManager scoreManager;
 
    [Header("Level Settings")][Tooltip("The amount of chunks we start with")]
    [SerializeField] int startingChunksAmount = 12; //초기 생성할 chunk 수 
@@ -66,8 +67,10 @@ public class LevelGenerator : MonoBehaviour
 
         Vector3 chunkSpawnPos = new Vector3(transform.position.x, transform.position.y, spawnPositionZ); 
         //Prefab 복제 Instantiate (gameobject, 위치, 회전여부, 부모설정)
-        GameObject newChunk = Instantiate(chunkPrefab, chunkSpawnPos, Quaternion.identity, chunkParent); //인스턴스화될 때 자동으로 Transform chunkParent에추가됨 
-        chunks.Add(newChunk); // 리스트 저장
+        GameObject newChunkGO = Instantiate(chunkPrefab, chunkSpawnPos, Quaternion.identity, chunkParent); //인스턴스화될 때 자동으로 Transform chunkParent에추가됨 
+        chunks.Add(newChunkGO); // 리스트 저장
+        Chunk newChunk = newChunkGO.GetComponent<Chunk>();
+        newChunk.Init(this, scoreManager);
     }
 
     private float CalculateSpawnPositionZ() //chunk의 z위치 계산 
