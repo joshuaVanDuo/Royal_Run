@@ -6,13 +6,14 @@ public class LevelGenerator : MonoBehaviour
 {  
    [Header("Refernces")]
    [SerializeField] CameraController cameraController;
-   [SerializeField] GameObject chunkPrefab; //타일 프리팹
-
+   [SerializeField] GameObject[] chunkPrefabs; //타일 프리팹
+   [SerializeField] GameObject checkpointChunkPrefab;
    [SerializeField] Transform chunkParent; 
    [SerializeField] ScoreManager scoreManager;
 
    [Header("Level Settings")][Tooltip("The amount of chunks we start with")]
    [SerializeField] int startingChunksAmount = 12; //초기 생성할 chunk 수 
+   [SerializeField] int checkpointChunkInterval = 8;
    [Tooltip("Do not change chunk length value unless chunk prefab size reflects change")]
    [SerializeField] float chunkLength = 10f; // chunk 길이
    [SerializeField] float moveSpeed = 8f; // chunk가 앞으로 이동하는 속도
@@ -22,6 +23,7 @@ public class LevelGenerator : MonoBehaviour
    [SerializeField] float maxGravityZ = -2f; 
 
    List<GameObject> chunks = new List<GameObject>(); // chunk 리스트 생성
+   int chunksSpawned = 0;
     
     void Start()
     {
@@ -64,13 +66,31 @@ public class LevelGenerator : MonoBehaviour
     private void SpawnChunk()
     {
         float spawnPositionZ = CalculateSpawnPositionZ();
-
-        Vector3 chunkSpawnPos = new Vector3(transform.position.x, transform.position.y, spawnPositionZ); 
+        Vector3 chunkSpawnPos = new Vector3(transform.position.x, transform.position.y, spawnPositionZ);
+        GameObject chunkToSpawn = ChooseChunkToSpawn();
         //Prefab 복제 Instantiate (gameobject, 위치, 회전여부, 부모설정)
-        GameObject newChunkGO = Instantiate(chunkPrefab, chunkSpawnPos, Quaternion.identity, chunkParent); //인스턴스화될 때 자동으로 Transform chunkParent에추가됨 
+        GameObject newChunkGO = Instantiate(chunkToSpawn, chunkSpawnPos, Quaternion.identity, chunkParent); //인스턴스화될 때 자동으로 Transform chunkParent에추가됨 
         chunks.Add(newChunkGO); // 리스트 저장
         Chunk newChunk = newChunkGO.GetComponent<Chunk>();
         newChunk.Init(this, scoreManager);
+
+        chunksSpawned++;
+    }
+
+    private GameObject ChooseChunkToSpawn()
+    {
+        GameObject chunkToSpawn;
+
+        if (chunksSpawned % checkpointChunkInterval == 0 && chunksSpawned != 0)
+        {
+            chunkToSpawn = checkpointChunkPrefab;
+        }
+        else
+        {
+            chunkToSpawn = chunkPrefabs[Random.Range(0, chunkPrefabs.Length)];
+        }
+
+        return chunkToSpawn;
     }
 
     private float CalculateSpawnPositionZ() //chunk의 z위치 계산 
