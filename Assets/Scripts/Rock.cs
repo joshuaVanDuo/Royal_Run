@@ -10,7 +10,7 @@ public class Rock : MonoBehaviour
     [SerializeField] float collisionColldown = 1f;
     CinemachineImpulseSource cinemachineImpulseSource;
 
-    float collisionTimer = 0f;
+    float collisionTimer = 1f;
 
     void Awake()
     {
