@@ -114,7 +114,7 @@ Packages 자동 복구 후, Assets/Scenes/Demo.unity 실행
 
 이동은 x/z 평면에서 경계(Clamp)로 제한되어 레인 이탈을 방지합니다.
 
-<h2 id="screenshots">🖼️ 스크린샷 / Screenshots</h2> <p align="center"> <img src="docs/royal_run_screenshot.png" width="720" alt="Royal Run Gameplay"/> </p>
+<h2 id="screenshots">🖼️ 스크린샷 / Screenshots</h2> <p align="center"> <img src="Royal Run Main.png" width="720" alt="Royal Run Gameplay"/> </p>
 
 체크포인트를 통과하면 시간 연장과 함께 장애물 스폰 텀이 짧아집니다.
 
