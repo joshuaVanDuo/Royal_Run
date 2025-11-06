@@ -108,9 +108,10 @@ Packages 자동 복구 후, Assets/Scenes/Demo.unity 실행
 에셋 의존성이 있는 경우, Readme/팝업 안내에 따라 의존 패키지를 함께 설치하세요.
 
 <h2 id="controls">🎮 조작법 / Controls</h2>
-동작	입력(Keyboard)	입력(Gamepad)
-좌/우/앞/뒤	WASD / Arrow Keys	Left Stick
-일시정지	(옵션) Esc	(옵션) Start
+| 동작      | 입력(Keyboard)          | 입력(Gamepad)    |
+| ------- | --------------------- | -------------- |
+| 좌/우/앞/뒤 | **WASD / Arrow Keys** | **Left Stick** |
+| 일시정지    | (옵션) Esc              | (옵션) Start     |
 
 이동은 x/z 평면에서 경계(Clamp)로 제한되어 레인 이탈을 방지합니다.
 
