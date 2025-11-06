@@ -114,11 +114,14 @@ Packages 자동 복구 후, Assets/Scenes/Demo.unity 실행
 에셋 의존성이 있는 경우, Readme/팝업 안내에 따라 의존 패키지를 함께 설치하세요.
 
 <h2 id="controls">🎮 조작법 / Controls</h2>
+
 | 동작    | 조작         |
 | ----- | ---------- |
-| 좌/우/앞/뒤    | **WASD**  |
+| 이동    | WASD   |
 
 이동은 x/z 평면에서 경계(Clamp)로 제한되어 레인 이탈을 방지합니다.
+
+---
 
 <h2 id="screenshots">🖼️ 스크린샷 / Screenshots</h2> <p align="center"> <img src="Royal Run Main.png" width="720" alt="Royal Run Gameplay"/> <img src="Royal Run Main2.png" width="720" alt="Royal Run Gameplay"/> </p>
 
