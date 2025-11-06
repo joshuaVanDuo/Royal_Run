@@ -141,15 +141,17 @@ Packages 자동 복구 후, Assets/Scenes/Demo.unity 실행
 
 <h2 id="credits">👤 제작자 / Credits</h2>
 
-기획·개발: 김영무 (Kim YoungMoo)
+* **기획·개발**: 김영무 (Kim YoungMoo)
 
-아트 리소스: Low-poly 리소스(상용/프리믹스)
+* **아트 리소스**: Low-poly 리소스(상용/프리믹스)
 
-사운드: 자체 제작 & 무료 라이브러리 활용
+* **사운드**: 자체 제작 & 무료 라이브러리 활용
+* **참고 강의**: [강의 링크](https://www.udemy.com/course/rpg-core-combat-creater-intermediate-unity-c-korean/?kw=rpg+%EC%BD%94%EC%96%B4&src=sac&couponCode=MT251103G1)
 
 
+ ---
+ 
 <h2 id="contact">📬 연락처 / Contact</h2>
 
-Email: rladuan612@gmail.com
-
-Portfolio: https://your-portfolio.link
+* **이메일**: [rladuan612@gmail.com](mailto:rladuan612@gmail.com)
+* **포트폴리오**: [포트폴리오](https://www.naver.com)
