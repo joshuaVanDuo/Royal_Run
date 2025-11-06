@@ -8,7 +8,7 @@ TL;DR
 
 장르: 3D Endless Runner
 
-엔진: Unity 2022.3 LTS (URP)
+엔진: Unity 6.0 (URP)
 
 역할(Role): 기획 100%, 프로그래밍 100% (로우폴리 리소스 활용)
 
