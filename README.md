@@ -132,17 +132,12 @@ Packages 자동 복구 후, Assets/Scenes/Demo.unity 실행
 
 <h2 id="credits">👤 제작자 / Credits</h2>
 
-기획·개발: 나현 (Na-Hyun)
+기획·개발: 김영무 (Kim YoungMoo)
 
 아트 리소스: Low-poly 리소스(상용/프리믹스)
 
 사운드: 자체 제작 & 무료 라이브러리 활용
 
-<h2 id="license">🪪 라이선스 / License</h2>
-
-코드: MIT License
-
-에셋: 각 저작권자 고지(포트폴리오 용도)
 
 <h2 id="contact">📬 연락처 / Contact</h2>
 
