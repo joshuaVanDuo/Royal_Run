@@ -113,6 +113,8 @@ Packages 자동 복구 후, Assets/Scenes/Demo.unity 실행
 
 에셋 의존성이 있는 경우, Readme/팝업 안내에 따라 의존 패키지를 함께 설치하세요.
 
+---
+
 <h2 id="controls">🎮 조작법 / Controls</h2>
 
 | 동작    | 조작         |
@@ -127,6 +129,8 @@ Packages 자동 복구 후, Assets/Scenes/Demo.unity 실행
 
 체크포인트를 통과하면 시간 연장과 함께 장애물 스폰 텀이 짧아집니다.
 
+---
+
 <h2 id="roadmap">🚀 향후 계획 / Roadmap</h2>
 
  오브젝트 풀링 도입(청크/장애물/코인)
@@ -139,6 +143,8 @@ Packages 자동 복구 후, Assets/Scenes/Demo.unity 실행
 
  코스 변주(점프/브릿지/낙하 트랩) 및 버프/디버프 아이템 확장
 
+ ---
+
 <h2 id="credits">👤 제작자 / Credits</h2>
 
 * **기획·개발**: 김영무 (Kim YoungMoo)
@@ -146,6 +152,7 @@ Packages 자동 복구 후, Assets/Scenes/Demo.unity 실행
 * **아트 리소스**: Low-poly 리소스(상용/프리믹스)
 
 * **사운드**: 자체 제작 & 무료 라이브러리 활용
+  
 * **참고 강의**: [강의 링크](https://www.udemy.com/course/best-3d-c-unity/?kw=C%23%EA%B3%BC+UNITY%EB%A1%9C+3&src=sac&couponCode=KEEPLEARNING)
 
 
